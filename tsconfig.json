@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "ES5",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@project/types": [
+        "types/index.d.ts"
+      ]
+    }
+  }
+}

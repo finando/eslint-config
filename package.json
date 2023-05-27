@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "@finando/eslint-config",
+  "description": "Shareable and extendable ESLint configuration.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:finando/eslint-config.git"
+  },
+  "contributors": [
+    {
+      "name": "Alexander Zakharov (azaxarov)",
+      "email": "alexander.zakharov@finando.app"
+    }
+  ],
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=18",
+    "npm": ">=9"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint:project": "run-p lint:eslint:project",
+    "lint:project:fix": "run-p lint:eslint:project:fix",
+    "lint:eslint:project": "eslint --ext ts,js ./",
+    "lint:eslint:project:fix": "eslint --ext ts,js ./ --fix",
+    "lint:eslint:staged:fix": "eslint --ext ts,js --fix",
+    "commit": "cz"
+  },
+  "dependencies": {
+    "eslint": "^8.32.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/eslint": "^8.4.10",
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
+    "commitizen": "^4.2.5",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.3",
+    "lerna": "^6.4.0",
+    "lint-staged": "^13.1.0",
+    "npm-run-all": "^4.1.5",
+    "nx": "^16.2.2",
+    "prettier": "^2.8.2",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.0.4"
+  }
+}

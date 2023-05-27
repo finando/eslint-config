@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc",
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "import"
+  ],
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [
+        ".ts"
+      ]
+    },
+    "import/internal-regex": "^@project",
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true,
+        "arrowParens": "avoid"
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true,
+          "orderImportKind": "desc"
+        }
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": [
+      "warn",
+      {
+        "prefer": "type-imports",
+        "fixStyle": "inline-type-imports"
+      }
+    ]
+  }
+}
