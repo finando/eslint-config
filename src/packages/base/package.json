@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git@github.com:finando/eslint-config.git"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "contributors": [
     {
       "name": "Alexander Zakharov (azaxarov)",
