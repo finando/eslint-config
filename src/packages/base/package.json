@@ -30,8 +30,8 @@
     "prepublishOnly": "run-s --npm-path npm build"
   },
   "peerDependencies": {
-    "eslint": "^8.31.0",
+    "eslint": "^8.41.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.4"
+    "eslint-plugin-import": "^2.27.5"
   }
 }
