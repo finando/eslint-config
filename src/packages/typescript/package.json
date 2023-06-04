@@ -6,7 +6,7 @@
     "type": "git",
     "url": "git@github.com:finando/eslint-config.git"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "contributors": [
     {
       "name": "Alexander Zakharov (azaxarov)",
@@ -30,7 +30,7 @@
     "prepublishOnly": "run-s --npm-path npm build"
   },
   "dependencies": {
-    "@finando/eslint-config-base": "^0.1.1"
+    "@finando/eslint-config-base": "^0.1.2"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.59.8",
