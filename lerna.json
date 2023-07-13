@@ -1,11 +1,11 @@
 {
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "packages": [
     "src/packages/*"
   ],
   "version": "independent",
   "tagVersionPrefix": "",
   "stream": true,
-  "hoist": true,
   "command": {
     "version": {
       "allowBranch": "master",
