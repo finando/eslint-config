@@ -6,12 +6,10 @@
     "type": "git",
     "url": "git@github.com:finando/eslint-config.git"
   },
-  "contributors": [
-    {
-      "name": "Alexander Zakharov (azaxarov)",
-      "email": "alexander.zakharov@finando.app"
-    }
-  ],
+  "author": {
+    "name": "Alexander Zakharov (azaxarov)",
+    "email": "alexander.zakharov@finando.app"
+  },
   "license": "UNLICENSED",
   "private": true,
   "engines": {
