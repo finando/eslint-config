@@ -10,31 +10,8 @@ env:
 
 jobs:
   check:
-    if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    name: Check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci --quiet --ignore-scripts
-
-      - name: Link local packages and install package dependencies
-        run: npx lerna bootstrap
-
-      - name: Audit dependencies
-        run: npm audit --omit=dev --audit-level=moderate
-
-      - name: Build all packages
-        run: npx lerna run build
-
-      - name: Lint project
-        run: npm run lint:project
+    uses: ./.github/workflows/check.yaml
+    secrets: inherit
 
   release:
     name: Release
