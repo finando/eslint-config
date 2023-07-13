@@ -38,12 +38,7 @@ npm install
 npm run prepare
 ```
 
-#### Step 3 - Bootstrap project
-```sh
-npx lerna bootstrap
-```
-
-#### Step 4 - Build leaf packages
+#### Step 3 - Build leaf packages
 ```sh
 npx lerna run build
 ```
