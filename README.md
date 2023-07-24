@@ -2,6 +2,7 @@
 
 Shareable and extendable ESLint configuration.
 
+[![GitHub Actions](https://github.com/finando/eslint-config/actions/workflows/check.yaml/badge.svg)](https://github.com/finando/eslint-config/actions/workflows/check.yaml)
 [![GitHub Actions](https://github.com/finando/eslint-config/actions/workflows/release.yaml/badge.svg)](https://github.com/finando/eslint-config/actions/workflows/release.yaml)
 
 ## Table of Contents
@@ -24,7 +25,7 @@ Please refer to the respective package configuration for more information:
 
 ### Development environment
 
-The project is structured as a monorepo and is managed by [Lerna](https://lerna.js.org/).
+The project is structured as a monorepo and is managed by [Lerna](https://lerna.js.org/) in conjunction with [NPM workspaces](https://docs.npmjs.com/cli/v9/using-npm/workspaces?v=true).
 
 Follow the outlined steps in order to set up a development environment.
 
