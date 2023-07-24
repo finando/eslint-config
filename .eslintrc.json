@@ -6,14 +6,15 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
+    "project": true,
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
   "extends": [
     "airbnb-base",
     "prettier",
-    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript"
