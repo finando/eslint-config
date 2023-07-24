@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.0](https://github.com/finando/eslint-config/compare/@finando/eslint-config-base@0.1.3...@finando/eslint-config-base@0.2.0) (2023-07-24)
+
+
+### Features
+
+* **packages/base:** disable inline ESLint configuration ([28d9d49](https://github.com/finando/eslint-config/commit/28d9d49a07d4ae95d5615b9ace3a376acdb49396))
+
+
+
 ## [0.1.3](https://github.com/finando/eslint-config/compare/@finando/eslint-config-base@0.1.2...@finando/eslint-config-base@0.1.3) (2023-07-02)
 
 **Note:** Version bump only for package @finando/eslint-config-base
