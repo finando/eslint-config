@@ -26,7 +26,8 @@
   "scripts": {
     "build": "run-s --npm-path npm clean build:typescript:compile",
     "build:typescript:compile": "tsc --build",
-    "clean": "rimraf lib",
+    "clean": "run-p clean:lib",
+    "clean:lib": "rimraf lib",
     "prepublishOnly": "run-s --npm-path npm build"
   },
   "dependencies": {
