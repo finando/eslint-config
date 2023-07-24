@@ -1,4 +1,4 @@
-import type { Configuration } from '@project/types';
+import { type Configuration } from '@project/types';
 
 const configuration: Configuration = {
   root: true,
