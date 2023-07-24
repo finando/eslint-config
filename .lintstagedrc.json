@@ -1,5 +1,5 @@
 {
-  "*.{ts,js,tsx,jsx}": [
+  "*.{ts,js}": [
     "npm run lint:eslint:staged:fix"
   ]
 }
