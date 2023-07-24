@@ -13,6 +13,8 @@ const configuration: Configuration = {
     'plugin:import/warnings',
   ],
   plugins: ['import'],
+  noInlineConfig: true,
+  reportUnusedDisableDirectives: true,
   rules: {
     'import/order': [
       'error',
