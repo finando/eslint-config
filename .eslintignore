@@ -1,18 +1,18 @@
-lib
-node_modules
+.DS_Store
 
 .github
 .husky
+.vscode
+
 .gitignore
 .editorconfig
 .eslintignore
-.husky
-.vscode
+
+lib
+node_modules
 
 .cz.json
 lerna.json
 nx.json
 package.json
 package-lock.json
-
-src/packages/**/lib
