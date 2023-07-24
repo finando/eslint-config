@@ -4,6 +4,7 @@ node_modules
 .github
 .husky
 .gitignore
+.editorconfig
 .eslintignore
 .husky
 .lintstagedrc
