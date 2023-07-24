@@ -1,12 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/package",
   "name": "@finando/eslint-config-typescript",
+  "version": "0.1.3",
   "description": "Shareable TypeScript ESLint configuration.",
   "repository": {
     "type": "git",
     "url": "git@github.com:finando/eslint-config.git"
   },
-  "version": "0.1.3",
   "contributors": [
     {
       "name": "Alexander Zakharov (azaxarov)",
@@ -24,9 +24,9 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "clean": "rimraf lib",
     "build": "run-s --npm-path npm clean build:typescript:compile",
     "build:typescript:compile": "tsc --build",
+    "clean": "rimraf lib",
     "prepublishOnly": "run-s --npm-path npm build"
   },
   "dependencies": {

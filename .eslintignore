@@ -11,8 +11,6 @@
 lib
 node_modules
 
-.cz.json
-lerna.json
-nx.json
-package.json
+!.*.json
+
 package-lock.json

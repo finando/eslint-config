@@ -20,14 +20,14 @@
     "src/packages/*"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "commit": "cz",
+    "lint:eslint:project": "eslint --ext ts,js,json ./",
+    "lint:eslint:project:fix": "eslint --ext ts,js,json ./ --fix",
+    "lint:eslint:staged:fix": "eslint --ext ts,js,json --fix",
     "lint:project": "run-p lint:eslint:project",
     "lint:project:fix": "run-p lint:eslint:project:fix",
-    "lint:eslint:project": "eslint --ext ts,js ./",
-    "lint:eslint:project:fix": "eslint --ext ts,js ./ --fix",
-    "lint:eslint:staged:fix": "eslint --ext ts,js --fix",
-    "update": "lernaupdate",
-    "commit": "cz"
+    "prepare": "husky install",
+    "update": "lernaupdate"
   },
   "dependencies": {
     "eslint": "^8.32.0"
@@ -45,6 +45,7 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-import-resolver-typescript": "^3.5.3",
     "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json-format": "^2.0.1",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
     "lerna": "^7.1.3",
