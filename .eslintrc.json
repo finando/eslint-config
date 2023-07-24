@@ -61,6 +61,23 @@
           "index",
           "object"
         ],
+        "pathGroups": [
+          {
+            "pattern": "@finando/*",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@(app|src|project)/*",
+            "group": "parent",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": [
+          "@finando/*",
+          "@(app|src|project)/*"
+        ],
+        "distinctGroup": true,
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",
