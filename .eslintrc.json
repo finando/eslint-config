@@ -37,6 +37,8 @@
       }
     }
   },
+  "noInlineConfig": true,
+  "reportUnusedDisableDirectives": true,
   "rules": {
     "prettier/prettier": [
       "error",
