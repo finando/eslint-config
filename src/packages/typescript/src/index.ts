@@ -1,13 +1,17 @@
 import base from '@finando/eslint-config-base';
 
-import type { Configuration } from '@project/types';
+import { type Configuration } from '@project/types';
 
 const configuration: Configuration = {
   ...base,
   parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: true,
+  },
   extends: [
     ...base.extends,
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/strict-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:import/typescript',
   ],
   plugins: [...base.plugins, '@typescript-eslint', 'deprecation'],
@@ -44,9 +48,10 @@ const configuration: Configuration = {
       { allow: ['arrowFunctions'] },
     ],
     'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
+    '@typescript-eslint/no-shadow': 'error',
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': 'error',
+    '@typescript-eslint/no-confusing-void-expression': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/consistent-type-imports': [
