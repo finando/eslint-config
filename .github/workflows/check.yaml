@@ -35,4 +35,4 @@ jobs:
         run: npx lerna run build
 
       - name: Lint project
-        run: npm run lint:project
+        run: npm run lint
