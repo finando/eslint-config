@@ -24,10 +24,10 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "run-s --npm-path npm clean build:typescript:compile",
-    "build:typescript:compile": "tsc --build",
+    "build": "run-s --npm-path npm clean compile",
     "clean": "run-p clean:lib",
     "clean:lib": "rimraf lib",
+    "compile": "tsc --build",
     "prepublishOnly": "run-s --npm-path npm build"
   },
   "dependencies": {
