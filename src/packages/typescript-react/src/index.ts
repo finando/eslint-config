@@ -1,22 +1,11 @@
 import base from '@finando/eslint-config-typescript';
 
-import type { Configuration } from '@project/types';
+import { type Configuration } from '@project/types';
 
 const configuration: Configuration = {
   ...base,
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:import/typescript',
-    'airbnb',
-    'airbnb/hooks',
-  ],
+  extends: [...base.extends, 'airbnb', 'airbnb/hooks'],
   plugins: [...base.plugins, 'jsx-a11y', 'react', 'react-hooks'],
-  settings: {
-    ...base.settings,
-  },
   rules: {
     ...base.rules,
     'import/extensions': [
